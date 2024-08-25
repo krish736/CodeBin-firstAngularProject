@@ -1,0 +1,9 @@
+<form class="container" [formGroup]="loginForm">
+    <h4>Login Here</h4>
+    <input type="email" placeholder="xyz@gmail.com" [formControl]="email">
+    <h5 [hidden]="email.valid || email.untouched">Enter Correct Email!</h5>
+    <input type="password" placeholder="********" [formControl]="password">
+    <h5 [hidden]="password.valid || password.untouched">Password must be greater than 6 digits!</h5>
+    <button (click)="login()" [disabled]="loginForm.invalid">Login</button>
+    <button (click)="reset()">Reset</button> 
+</form>

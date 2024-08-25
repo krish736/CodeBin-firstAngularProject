@@ -1,0 +1,110 @@
+/* Style the form container */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    /* Center the form */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #2c2c2c;
+    /* Dark background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Subtle shadow for depth */
+    text-align: center;
+    /* Center-align text */
+}
+
+/* Style the heading */
+.container h4 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #f1f1f1;
+    /* Light text color */
+}
+
+/* Style the validation messages */
+.container h5 {
+    color: #ff6b6b;
+    /* Red color for error messages */
+    margin: 5px 0 15px;
+    font-size: 14px;
+}
+
+/* Style the input fields */
+.container input[type="email"],
+.container input[type="password"] {
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    /* Darker border */
+    border-radius: 4px;
+    /* Rounded corners */
+    font-size: 16px;
+    background-color: #3b3b3b;
+    /* Dark background for inputs */
+    color: #eaeaea;
+    /* Light text color */
+    box-sizing: border-box;
+    /* Include padding and border in width */
+}
+
+/* Focus state for input fields */
+.container input[type="email"]:focus,
+.container input[type="password"]:focus {
+    border-color: #007bff;
+    /* Blue border on focus */
+    outline: none;
+    /* Remove default outline */
+    background-color: #444;
+    /* Slightly lighter background on focus */
+}
+
+/* Style the buttons */
+.container button {
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    /* Rounded corners */
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Login button specific style */
+.container button:nth-child(6) {
+    background-color: #007bff;
+    /* Blue background */
+    color: #fff;
+    /* White text */
+    margin-bottom: 10px;
+}
+
+.container button:nth-child(6):disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Reset button specific style */
+.container button:nth-child(7) {
+    background-color: #6c757d;
+    /* Gray background */
+    color: #fff;
+    /* White text */
+}
+
+/* Hover effects for buttons */
+.container button:hover {
+    opacity: 0.85;
+    /* Slight opacity on hover */
+}
+
+/* Additional styles for a polished look */
+.container input[type="email"]::placeholder,
+.container input[type="password"]::placeholder {
+    color: #888;
+    /* Lighter color for placeholders */
+    font-size: 14px;
+}

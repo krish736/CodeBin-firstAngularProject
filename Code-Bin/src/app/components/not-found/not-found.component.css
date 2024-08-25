@@ -1,0 +1,53 @@
+/* Container styling */
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* Full viewport height */
+    background-color: #2c2c2c;
+    /* Dark background color */
+    color: #f1f1f1;
+    /* Light text color */
+    text-align: center;
+    position: relative;
+}
+
+/* Error Code styling */
+div h1 {
+    font-size: 96px;
+    margin: 0;
+    font-weight: bold;
+    color: #ff6b6b;
+    /* Bright red color for the error code */
+}
+
+/* Error Message styling */
+div h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    color: #eaeaea;
+    /* Light color for the error message */
+}
+
+/* Additional styling for visual appeal */
+div h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    background-color: #ff6b6b;
+    /* Red line below the error code */
+    margin: 20px auto 0;
+}
+
+div h3::after {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 2px;
+    background-color: #eaeaea;
+    /* Light line below the message */
+    margin: 20px auto 0;
+}

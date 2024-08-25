@@ -1,0 +1,96 @@
+/* Style the form container */
+.container {
+    max-width: 600px;
+    /* Increased width for textarea */
+    margin: 50px auto;
+    /* Center the form horizontally */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #2c2c2c;
+    /* Dark background color */
+    color: #f1f1f1;
+    /* Light text color */
+    text-align: center;
+}
+
+/* Style the form heading */
+.container h4 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #f1f1f1;
+    /* Light color for heading */
+}
+
+/* Style the input fields */
+.container input[type="text"],
+.container textarea {
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    /* Dark border */
+    border-radius: 4px;
+    /* Rounded corners */
+    font-size: 16px;
+    background-color: #3b3b3b;
+    /* Dark background for inputs */
+    color: #eaeaea;
+    /* Light text color */
+    box-sizing: border-box;
+    /* Include padding and border in width */
+    resize: vertical;
+    /* Allow vertical resizing for textarea */
+}
+
+/* Focus state for input fields */
+.container input[type="text"]:focus,
+.container textarea:focus {
+    border-color: #007bff;
+    /* Blue border on focus */
+    outline: none;
+    /* Remove default outline */
+    background-color: #444;
+    /* Slightly lighter background on focus */
+}
+
+/* Style the validation messages */
+.container h5 {
+    color: #ff6b6b;
+    /* Red color for error messages */
+    margin: 5px 0 15px;
+    font-size: 14px;
+}
+
+/* Style the buttons */
+.container button {
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    /* Rounded corners */
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    /* Blue background */
+    color: #fff;
+    /* White text */
+}
+
+/* Button hover effect */
+.container button:hover {
+    opacity: 0.85;
+    /* Slight opacity on hover */
+}
+
+/* Disabled button styling */
+.container button[disabled] {
+    background-color: #6c757d;
+    /* Gray background for disabled state */
+    cursor: not-allowed;
+    /* Show not-allowed cursor */
+    opacity: 0.65;
+    /* Slightly transparent */
+}

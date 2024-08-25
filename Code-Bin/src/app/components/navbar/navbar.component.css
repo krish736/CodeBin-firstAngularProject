@@ -1,0 +1,64 @@
+/* Container for the navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    /* Dark background */
+    padding: 10px 30px;
+}
+
+/* Styling the brand/logo */
+nav h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav h2 a {
+    color: #fff;
+    /* White text */
+    text-decoration: none;
+}
+
+/* Style the navigation list */
+nav ul {
+    list-style-type: none;
+    /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Display items inline */
+}
+
+/* Style the individual list items */
+nav ul li {
+    margin-left: 20px;
+    /* Spacing between items */
+}
+
+/* Style the links */
+nav ul li a {
+    color: #fff;
+    /* White text */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Active link styles */
+nav ul li a.active {
+    border-bottom: 2px solid #fff;
+    /* Underline for active link */
+}
+
+/* Hover effects for links */
+nav ul li a:hover {
+    color: #ccc;
+    /* Light gray on hover */
+}
+
+/* Horizontal rule styling */
+hr {
+    border: 1px solid #ddd;
+    /* Light gray line */
+    margin-top: 10px;
+}
